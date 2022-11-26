@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.navbar {
+    position: fixed;
+    width: 84%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    z-index: 1;
+    padding-left: 9%;
+    padding-right: 2%;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    white-space: nowrap;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #c59b6c;
+    transition: color 0.3s;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider figure div {
+    float: left;
+    width: 20%;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.jef-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/jamaa-el-fna-1.jpg");
+}
+
+.jef-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/jamaa-el-fna-2.jpg");
+}
+
+.jef-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/jamaa-el-fna-5.jpg");
+}
+
+.jef-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/jamaa-el-fna-4.jpg");
+}
+
+.jef-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/jamaa-el-fna-3.jpg");
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 40s infinite;
+}
+
+.slide-text {
+    position: absolute;
+    padding-left: 1.5%;
+    margin-top: 350px;
+    max-width: 600px;
+    cursor: default;
+}
+
+.slide-text h2 {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.slide-text p {
+    color: #fff;
+    text-align: justify;
+    margin-right: 70px;
+}
+
+@keyframes animate {
+    0%{left: 0%;}
+    10%{left: 0%;}
+    12%{left: -100%;}
+    22%{left: -100%;}
+    24%{left: -200%;}
+    34%{left: -200%;}
+    36%{left: -300%;}
+    46%{left: -300%;}
+    48%{left: -400%;}
+    58%{left: -400%;}
+    60%{left: -300%;}
+    70%{left: -300%;}
+    72%{left: -200%;}
+    82%{left: -200%;}
+    84%{left: -100%;}
+    94%{left: -100%;}
+    96%{left: 0%;}
+}
+
+@media (max-width: 1485px) {
+    nav ul li {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .navbar {
+        position: fixed;
+    }
+}
+
+@media (max-width: 828px) {
+    .navbar {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .logo {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 590px) {
+    .logo {
+        width: 220px;
+        margin-bottom: 40px;
+    }   
+}
+
+@media (max-width: 548px) {
+    .navbar nav ul li {
+        margin: 0px 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .slide-text h2 {
+        white-space: normal;
+        padding-right: 30px;
+    }
+}
